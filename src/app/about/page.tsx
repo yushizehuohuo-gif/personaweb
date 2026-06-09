@@ -22,18 +22,16 @@ export default function AboutPage() {
       <div className="max-w-4xl">
         {/* Super minimal intro — poster style */}
         <p className="text-text-muted text-xs tracking-[0.2em] uppercase mb-6">
-          About
+          About / HuoHuoOvO
         </p>
 
         <h1 className="text-5xl sm:text-6xl lg:text-8xl font-bold tracking-tight leading-[0.95]">
-          I MAKE
-          <br />
-          <span className="text-cherry">THINGS</span> THAT
-          <br />
-          DIDN&rsquo;T EXIST
-          <br />
-          YESTERDAY
+          <span className="text-cherry">SHIZE</span> YU
         </h1>
+
+        <p className="mt-6 text-text-muted text-sm tracking-wider">
+          also known as HuoHuoOvO
+        </p>
 
         <p className="mt-10 text-text-secondary text-lg sm:text-xl max-w-lg leading-relaxed">
           A creative technologist working at the intersection of game design,

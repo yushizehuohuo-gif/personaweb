@@ -40,7 +40,7 @@ export default function Navbar() {
         href="/"
         className="text-xl sm:text-2xl font-bold tracking-tight text-text-primary hover:text-cherry transition-colors duration-200"
       >
-        YU SHI
+        SHIZE YU
       </Link>
 
       {/* Nav Links */}

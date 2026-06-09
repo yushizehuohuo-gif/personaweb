@@ -12,8 +12,8 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    default: "YU SHI — Creative Technologist",
-    template: "%s — YU SHI",
+    default: "SHIZE YU — Creative Technologist",
+    template: "%s — SHIZE YU",
   },
   description:
     "Creative Technologist exploring the intersections of game design, AI art, and digital culture.",
