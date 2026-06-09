@@ -7,18 +7,18 @@
   --color-mint: #6CE5D8;
   --color-orange: #FF9A3D;
 
-  /* ── Surfaces ── */
-  --color-bg-base: #1C1B22;
-  --color-bg-elevated: #24232B;
-  --color-bg-card: #2A2933;
+  /* ── Surfaces — warm paper, not pure white ── */
+  --color-bg-base: #F5F2EE;
+  --color-bg-elevated: #F0ECE6;
+  --color-bg-card: #FFFFFF;
 
   /* ── Text ── */
-  --color-text-primary: #F0EEEA;
-  --color-text-secondary: #9B99A3;
-  --color-text-muted: #6B6973;
+  --color-text-primary: #1C1B22;
+  --color-text-secondary: #6B6973;
+  --color-text-muted: #9B99A3;
 
   /* ── Borders ── */
-  --color-border: #33313D;
+  --color-border: #D4D0C8;
 
   /* ── Typography ── */
   --font-sans: "Space Grotesk", "MiSans", system-ui, -apple-system, sans-serif;
@@ -27,7 +27,7 @@
 
 /* ── Base ── */
 html {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
@@ -55,5 +55,5 @@ body {
 /* ── Selection ── */
 ::selection {
   background: var(--color-cherry);
-  color: var(--color-text-primary);
+  color: #ffffff;
 }

@@ -32,7 +32,7 @@ export default function Navbar() {
         py-5
         flex items-center justify-between
         transition-colors duration-300
-        ${scrolled ? "bg-bg-base/80 backdrop-blur-xl border-b border-border" : "bg-transparent"}
+        ${scrolled ? "bg-bg-base/90 border-b border-border" : "bg-transparent"}
       `}
     >
       {/* Masthead */}

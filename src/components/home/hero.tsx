@@ -24,7 +24,7 @@ const item = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center px-6 sm:px-10 lg:px-16 pt-24 pb-16 overflow-hidden">
-      {/* ── Fullscreen Background Art ── */}
+      {/* ── Background Art ── */}
       <div className="absolute inset-0 -z-10">
         <Image
           src="/personaweb/images/firsttry.jpg"
@@ -33,9 +33,9 @@ export default function Hero() {
           className="object-cover"
           priority
         />
-        {/* Dark gradient overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-bg-base/95 via-bg-base/70 to-bg-base/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-bg-base/60 via-transparent to-transparent" />
+        {/* Light gradient overlay to keep text readable */}
+        <div className="absolute inset-0 bg-gradient-to-r from-bg-base/90 via-bg-base/60 to-bg-base/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-base/40" />
       </div>
 
       {/* ── Left: Typography ── */}
@@ -76,7 +76,7 @@ export default function Hero() {
             className="
               group inline-flex items-center gap-3
               bg-cherry hover:bg-cherry/90
-              text-text-primary font-semibold
+              text-white font-semibold
               px-8 py-4
               text-sm sm:text-base tracking-wide
               transition-all duration-300
@@ -88,25 +88,6 @@ export default function Hero() {
             </span>
           </Link>
         </motion.div>
-      </motion.div>
-
-      {/* ── Right: subtle decorative overlay from the art's red tones ── */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 0.8 }}
-        className="
-          absolute right-[5%] bottom-[15%]
-          hidden lg:block
-        "
-      >
-        <Image
-          src="/personaweb/images/firsttry.jpg"
-          alt=""
-          width={300}
-          height={400}
-          className="object-cover opacity-0"
-        />
       </motion.div>
     </section>
   );
