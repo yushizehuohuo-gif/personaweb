@@ -23,7 +23,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="zh-CN" className={`${spaceGrotesk.variable}`}>
+    <html lang="zh-CN" className={`${spaceGrotesk.variable} dark`}>
       <body className="min-h-screen font-sans antialiased">
         <Navbar />
         <main className="min-h-screen">{children}</main>

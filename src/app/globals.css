@@ -8,24 +8,24 @@
   --color-keppel: #59AC99;
   --color-delft-blue: #3E446E;
 
-  /* ── Aliases (backwards compatibility) ── */
+  /* ── Aliases ── */
   --color-cherry: var(--color-imperial-red);
   --color-pink: var(--color-orange-web);
   --color-mint: var(--color-keppel);
   --color-orange: var(--color-giants-orange);
 
-  /* ── Surfaces ── */
-  --color-bg-base: #F5F2EE;
-  --color-bg-elevated: #EDE9E2;
-  --color-bg-card: #ffffff;
+  /* ── Surfaces — deep retro black ── */
+  --color-bg-base: #1A1A1E;
+  --color-bg-elevated: #232327;
+  --color-bg-card: #2A2A30;
 
   /* ── Text ── */
-  --color-text-primary: #1C1B22;
-  --color-text-secondary: #5C5A66;
-  --color-text-muted: #8C8A94;
+  --color-text-primary: #EAE8E3;
+  --color-text-secondary: #9B99A3;
+  --color-text-muted: #6B6973;
 
   /* ── Borders ── */
-  --color-border: #D4D0C8;
+  --color-border: #33313D;
 
   /* ── Typography ── */
   --font-sans: "Space Grotesk", "MiSans", system-ui, -apple-system, sans-serif;
@@ -34,7 +34,7 @@
 
 /* ── Base ── */
 html {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 body {
