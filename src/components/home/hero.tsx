@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const container = {
@@ -23,6 +24,20 @@ const item = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center px-6 sm:px-10 lg:px-16 pt-24 pb-16 overflow-hidden">
+      {/* ── Fullscreen Background Art ── */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/personaweb/images/firsttry.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark gradient overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-bg-base/95 via-bg-base/70 to-bg-base/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-bg-base/60 via-transparent to-transparent" />
+      </div>
+
       {/* ── Left: Typography ── */}
       <motion.div
         variants={container}
@@ -75,43 +90,23 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      {/* ── Right: Abstract Visual ── */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        className="
-          absolute right-0 top-1/2 -translate-y-1/2
-          hidden lg:block
-          w-[45vw] h-[70vh] max-w-[800px]
-        "
-      >
-        {/* Large Cherry Red block */}
-        <div className="absolute right-[10%] top-[5%] w-[55%] aspect-[3/4] bg-cherry" />
-
-        {/* Pink accent bar */}
-        <div className="absolute right-[5%] top-[15%] w-[8%] h-[30%] bg-pink" />
-
-        {/* Mint stripe */}
-        <div className="absolute right-[68%] bottom-[10%] w-[15%] h-[6%] bg-mint" />
-
-        {/* Orange circle */}
-        <div className="absolute right-[30%] top-[60%] w-[12%] aspect-square rounded-full bg-orange" />
-
-        {/* Dark overlay shape */}
-        <div className="absolute right-[20%] top-[20%] w-[40%] aspect-square border-2 border-text-secondary/20" />
-      </motion.div>
-
-      {/* ── Mobile: small abstract accent ── */}
+      {/* ── Right: subtle decorative overlay from the art's red tones ── */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.8 }}
-        className="lg:hidden absolute right-6 top-1/3 flex flex-col gap-3"
+        transition={{ duration: 1.5, delay: 0.8 }}
+        className="
+          absolute right-[5%] bottom-[15%]
+          hidden lg:block
+        "
       >
-        <div className="w-16 h-16 bg-cherry" />
-        <div className="w-8 h-8 bg-pink rounded-full ml-8" />
-        <div className="w-12 h-2 bg-mint ml-4" />
+        <Image
+          src="/personaweb/images/firsttry.jpg"
+          alt=""
+          width={300}
+          height={400}
+          className="object-cover opacity-0"
+        />
       </motion.div>
     </section>
   );

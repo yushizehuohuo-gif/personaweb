@@ -76,6 +76,17 @@ export const portfolioItems: PortfolioItem[] = [
     span: "1x2",
     aspect: "aspect-[3/4]",
   },
+  {
+    id: "firsttry",
+    title: "Fantasy\nLandscape Study",
+    category: "ai-art",
+    categoryLabel: "AI Art",
+    description:
+      "A 4-panel fantasy landscape composition exploring Eastern aesthetics,epic atmosphere,and the interplay of red and teal tones.",
+    accent: "cherry",
+    span: "2x1",
+    aspect: "aspect-[16/9]",
+  },
 ];
 
 export const categories = [
