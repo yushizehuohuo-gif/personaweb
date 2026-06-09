@@ -1,21 +1,28 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* ── Brand Colors ── */
-  --color-cherry: #B31E3D;
-  --color-pink: #FF4FA2;
-  --color-mint: #6CE5D8;
-  --color-orange: #FF9A3D;
+  /* ── Retro Palette ── */
+  --color-imperial-red: #E7363C;
+  --color-giants-orange: #F56438;
+  --color-orange-web: #FCAB20;
+  --color-keppel: #59AC99;
+  --color-delft-blue: #3E446E;
 
-  /* ── Surfaces — warm paper, not pure white ── */
+  /* ── Aliases (backwards compatibility) ── */
+  --color-cherry: var(--color-imperial-red);
+  --color-pink: var(--color-orange-web);
+  --color-mint: var(--color-keppel);
+  --color-orange: var(--color-giants-orange);
+
+  /* ── Surfaces ── */
   --color-bg-base: #F5F2EE;
-  --color-bg-elevated: #F0ECE6;
-  --color-bg-card: #FFFFFF;
+  --color-bg-elevated: #EDE9E2;
+  --color-bg-card: #ffffff;
 
   /* ── Text ── */
   --color-text-primary: #1C1B22;
-  --color-text-secondary: #6B6973;
-  --color-text-muted: #9B99A3;
+  --color-text-secondary: #5C5A66;
+  --color-text-muted: #8C8A94;
 
   /* ── Borders ── */
   --color-border: #D4D0C8;
@@ -54,6 +61,6 @@ body {
 
 /* ── Selection ── */
 ::selection {
-  background: var(--color-cherry);
+  background: var(--color-imperial-red);
   color: #ffffff;
 }

@@ -31,9 +31,14 @@ const works = [
 ];
 
 const accentMap = {
-  cherry: "bg-cherry",
-  pink: "bg-pink",
-  mint: "bg-mint",
+  "imperial-red": "bg-imperial-red",
+  "orange-web": "bg-orange-web",
+  keppel: "bg-keppel",
+  "giants-orange": "bg-giants-orange",
+  "delft-blue": "bg-delft-blue",
+  cherry: "bg-imperial-red",
+  pink: "bg-orange-web",
+  mint: "bg-keppel",
 };
 
 const cardVariants = {
@@ -99,10 +104,8 @@ export default function FeaturedWorks() {
               <span
                 className={`
                   inline-block text-xs font-semibold tracking-wider uppercase
-                  px-3 py-1 mb-4
-                  ${work.accent === "cherry" ? "bg-cherry text-text-primary" : ""}
-                  ${work.accent === "pink" ? "bg-pink text-bg-base" : ""}
-                  ${work.accent === "mint" ? "bg-mint text-bg-base" : ""}
+                  px-3 py-1 mb-4 text-white
+                  ${accentMap[work.accent]}
                 `}
               >
                 {work.category}

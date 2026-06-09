@@ -5,10 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { portfolioItems, categories, type PortfolioItem } from "@/data/portfolio";
 
 const accentMap: Record<PortfolioItem["accent"], string> = {
-  cherry: "bg-cherry",
-  pink: "bg-pink",
-  mint: "bg-mint",
-  orange: "bg-orange",
+  "imperial-red": "bg-imperial-red",
+  "orange-web": "bg-orange-web",
+  keppel: "bg-keppel",
+  "giants-orange": "bg-giants-orange",
+  "delft-blue": "bg-delft-blue",
 };
 
 const colSpanMap: Record<PortfolioItem["span"], string> = {
@@ -106,11 +107,8 @@ export default function PortfolioPage() {
                 <span
                   className={`
                     inline-block text-xs font-semibold tracking-wider uppercase
-                    px-3 py-1 mb-3
-                    ${item.accent === "cherry" ? "bg-cherry text-text-primary" : ""}
-                    ${item.accent === "pink" ? "bg-pink text-bg-base" : ""}
-                    ${item.accent === "mint" ? "bg-mint text-bg-base" : ""}
-                    ${item.accent === "orange" ? "bg-orange text-bg-base" : ""}
+                    px-3 py-1 mb-3 text-white
+                    ${accentMap[item.accent]}
                   `}
                 >
                   {item.categoryLabel}
