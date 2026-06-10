@@ -7,7 +7,6 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen pt-32 pb-24 px-6 sm:px-10 lg:px-16">
-      {/* Page header */}
       <div className="mb-16">
         <p className="text-text-muted text-xs tracking-[0.2em] uppercase mb-4">
           Writing
@@ -23,7 +22,6 @@ export default function BlogPage() {
         </p>
       </div>
 
-      {/* Tags */}
       <div className="flex flex-wrap gap-2 mb-12">
         {tags.map((tag) => (
           <span
@@ -35,9 +33,8 @@ export default function BlogPage() {
         ))}
       </div>
 
-      {/* Posts list — editorial cards */}
       <div className="space-y-1">
-        {posts.map((post, i) => (
+        {posts.map((post) => (
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
@@ -59,7 +56,7 @@ export default function BlogPage() {
                   month: "long",
                   day: "numeric",
                 })}{" "}
-                · {post.readingTime}
+                / {post.readingTime}
               </span>
             </div>
             <p className="mt-3 text-text-secondary leading-relaxed max-w-2xl">
@@ -69,7 +66,6 @@ export default function BlogPage() {
         ))}
       </div>
 
-      {/* Last border */}
       <div className="border-b border-border" />
 
       {posts.length === 0 && (

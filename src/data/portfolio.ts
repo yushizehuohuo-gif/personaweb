@@ -49,7 +49,7 @@ export const portfolioItems: PortfolioItem[] = [
     category: "game",
     categoryLabel: "Game Dev",
     description:
-      "Experimental game prototypes built with Godot — exploring mechanics, mood, and minimalist aesthetics.",
+      "Experimental game prototypes built with Godot - exploring mechanics, mood, and minimalist aesthetics.",
     accent: "giants-orange",
     span: "1x1",
     aspect: "aspect-[3/4]",
@@ -67,7 +67,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: "q-version-series",
-    title: "Q版\nArt Series",
+    title: "Q-version\nArt Series",
     category: "ai-art",
     categoryLabel: "AI Art",
     description:

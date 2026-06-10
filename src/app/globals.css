@@ -1,38 +1,37 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* ── Retro Palette ── */
+  /* Retro palette */
   --color-imperial-red: #E7363C;
   --color-giants-orange: #F56438;
   --color-orange-web: #FCAB20;
   --color-keppel: #59AC99;
   --color-delft-blue: #3E446E;
 
-  /* ── Aliases ── */
+  /* Aliases */
   --color-cherry: var(--color-imperial-red);
   --color-pink: var(--color-orange-web);
   --color-mint: var(--color-keppel);
   --color-orange: var(--color-giants-orange);
 
-  /* ── Surfaces — deep retro black ── */
+  /* Surfaces */
   --color-bg-base: #1A1A1E;
   --color-bg-elevated: #232327;
   --color-bg-card: #2A2A30;
 
-  /* ── Text ── */
+  /* Text */
   --color-text-primary: #EAE8E3;
   --color-text-secondary: #9B99A3;
   --color-text-muted: #6B6973;
 
-  /* ── Borders ── */
+  /* Borders */
   --color-border: #33313D;
 
-  /* ── Typography ── */
-  --font-sans: "Space Grotesk", "MiSans", system-ui, -apple-system, sans-serif;
+  /* Typography */
+  --font-sans: "MiSans", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 }
 
-/* ── Base ── */
 html {
   color-scheme: dark;
 }
@@ -45,7 +44,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ── Scrollbar ── */
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -59,8 +57,62 @@ body {
   border-radius: 2px;
 }
 
-/* ── Selection ── */
 ::selection {
   background: var(--color-imperial-red);
   color: #ffffff;
+}
+
+.article-prose {
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.85;
+}
+
+.article-prose :where(p) {
+  margin: 1.25rem 0;
+}
+
+.article-prose :where(h2) {
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 3rem 0 1rem;
+}
+
+.article-prose :where(h3) {
+  color: var(--color-text-primary);
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-weight: 700;
+  margin: 2.25rem 0 0.75rem;
+}
+
+.article-prose :where(a) {
+  color: var(--color-keppel);
+  text-decoration: none;
+}
+
+.article-prose :where(a:hover) {
+  text-decoration: underline;
+}
+
+.article-prose :where(strong) {
+  color: var(--color-text-primary);
+}
+
+.article-prose :where(ul, ol) {
+  margin: 1.25rem 0;
+  padding-left: 1.5rem;
+}
+
+.article-prose :where(li) {
+  margin: 0.5rem 0;
+}
+
+.article-prose :where(blockquote) {
+  margin: 2rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-imperial-red);
+  color: var(--color-text-primary);
 }

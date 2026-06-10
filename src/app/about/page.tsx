@@ -1,10 +1,10 @@
-import { Globe, Mail } from "lucide-react";
+import { Globe } from "lucide-react";
 
 const skills = [
   "Godot Engine",
   "ComfyUI",
   "AI Art Direction",
-  "Q版 / Chibi Design",
+  "Q-version / Chibi Design",
   "Stable Diffusion",
   "LoRA Training",
   "Visual Identity",
@@ -12,15 +12,13 @@ const skills = [
 ];
 
 const links = [
-  { label: "GitHub", href: "#", icon: Globe },
-  { label: "Email", href: "mailto:hello@example.com", icon: Mail },
+  { label: "GitHub", href: "https://github.com/yushizehuohuo-gif", icon: Globe },
 ];
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen pt-32 pb-24 px-6 sm:px-10 lg:px-16">
       <div className="max-w-4xl">
-        {/* Super minimal intro — poster style */}
         <p className="text-text-muted text-xs tracking-[0.2em] uppercase mb-6">
           About / HuoHuoOvO
         </p>
@@ -35,12 +33,11 @@ export default function AboutPage() {
 
         <p className="mt-10 text-text-secondary text-lg sm:text-xl max-w-lg leading-relaxed">
           A creative technologist working at the intersection of game design,
-          AI art, and digital culture. I build visual worlds — from chibi
-          character series to interactive prototypes — using whatever tools
+          AI art, and digital culture. I build visual worlds - from chibi
+          character series to interactive prototypes - using whatever tools
           the moment demands.
         </p>
 
-        {/* Skills — not bars, just tags */}
         <div className="mt-14">
           <p className="text-text-muted text-xs tracking-[0.2em] uppercase mb-4">
             Tools &amp; Focus
@@ -63,7 +60,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Contact — just icons, no form */}
         <div className="mt-16 pt-12 border-t border-border">
           <p className="text-text-muted text-xs tracking-[0.2em] uppercase mb-6">
             Connect

@@ -23,7 +23,7 @@ const item = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center px-6 sm:px-10 lg:px-16 pt-24 pb-16 overflow-hidden">
-      {/* ── Retro decorative blocks ── */}
+      {/* Retro decorative blocks */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -34,23 +34,14 @@ export default function Hero() {
           w-[45vw] h-[70vh] max-w-[800px]
         "
       >
-        {/* Imperial Red block */}
         <div className="absolute right-[10%] top-[5%] w-[55%] aspect-[3/4] bg-imperial-red" />
-
-        {/* Orange Web bar */}
         <div className="absolute right-[5%] top-[15%] w-[8%] h-[30%] bg-orange-web" />
-
-        {/* Keppel stripe */}
         <div className="absolute right-[68%] bottom-[10%] w-[15%] h-[6%] bg-keppel" />
-
-        {/* Giants Orange circle */}
         <div className="absolute right-[30%] top-[60%] w-[12%] aspect-square rounded-full bg-giants-orange" />
-
-        {/* Delft Blue outline shape */}
         <div className="absolute right-[20%] top-[20%] w-[40%] aspect-square border-2 border-delft-blue/30" />
       </motion.div>
 
-      {/* ── Mobile accent ── */}
+      {/* Mobile accent */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -62,7 +53,6 @@ export default function Hero() {
         <div className="w-12 h-2 bg-keppel ml-4" />
       </motion.div>
 
-      {/* ── Left: Typography ── */}
       <motion.div
         variants={container}
         initial="hidden"
@@ -108,7 +98,7 @@ export default function Hero() {
           >
             EXPLORE WORKS
             <span className="text-orange-web group-hover:translate-x-1 transition-transform duration-300">
-              →
+              -&gt;
             </span>
           </Link>
         </motion.div>
